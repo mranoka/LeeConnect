@@ -5,7 +5,13 @@ body {
     z-index: -1;
 }
 
-nav ul li a {
+#king-container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(77, 148, 255, 0.2);
+}
+
+.nav-linx {
     background-color: hsl(336, 100%, 70%);
     border-radius: 7px;
     padding: 10px;
@@ -74,16 +80,82 @@ nav ul {
     margin-left: 60px;
 }
 
-@media screen and (min-width: 700px) {
+@media (min-width: 700px) {
     #social-media {
-        margin-left: 320px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .social-item {
+        margin-left: 200px;
+    }
+    .s-item {
+        margin-left: -25px;
+    }
+}
+@media (min-width: 599px) {
+    #ham-menu, #main-header2 {
+        display: none;
     }
 }
 
-@media screen and (max-width: 595px) {
-    .col-xs-3 {
-        margin-left: 60px;
+@media (max-width: 598px) {
+    #home-head2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        text-decoration: none;
+        list-style-type: none;
     }
+    .nav2 {
+        color: white;
+        font-weight: 900;
+        background-color: black;
+        padding: 10px;
+        border-radius: 12px;
+
+    }
+    .nav2:hover {
+        color: black;
+        font-weight: 900;
+        background-color: white;
+        padding: 10px;
+        border-radius: 12px;
+
+    }
+    .gal {
+        margin-left: 25px;
+    }
+    #social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .social-item {
+        margin-left: 50px;
+    }
+    .s-item {
+        margin-left: -25px;
+    }
+    #main-header1, #about-header-gal, #about-header {
+        display: none;
+    }
+
+    #foto-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #ham-menu {
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+    
+    
+    #king-container {
+        margin-top: -6px;
+       /* margin-left: 8px; */
+    }   
 }
 
 i {
@@ -100,6 +172,7 @@ i:hover {
     color: white;
     padding: 10px;
 }
+
 #main-body {
     background-color: rgba(194, 194, 214, 0.8);
 }
@@ -144,6 +217,7 @@ i:hover {
     font-style: serif, sans-serif, cursive;
     font-size: 25px;
 }
+
 @media screen and (max-width: 700px) {
     #back-history, #exec-summary {
         margin-top: 10px;
